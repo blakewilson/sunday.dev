@@ -13,7 +13,7 @@ export default function Home() {
         )}
       </Head>
       <div className="absolute inset-0 flex flex-col items-center justify-center">
-        <div className="w-96">
+        <div className="max-w-xl px-6">
           <div className="flex flex-col items-center justify-center mb-8">
             <img
               className="block h-20 w-20 rounded-full mb-4"

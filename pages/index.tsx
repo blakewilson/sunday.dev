@@ -12,7 +12,7 @@ export default function Home() {
           <meta name="description" content={config.siteDescription} />
         )}
       </Head>
-      <div className="min-h-screen h-screen flex flex-col items-center justify-center">
+      <div className="absolute inset-0 flex flex-col items-center justify-center">
         <div className="w-96">
           <div className="flex flex-col items-center justify-center mb-8">
             <img

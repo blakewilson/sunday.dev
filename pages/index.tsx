@@ -29,22 +29,28 @@ export default function Home() {
                 <h1 className="text-4xl font-bold">{config.siteName}</h1>
               )}
 
-            {config.logoLightUrl && (
-              <img
-                src={config.logoLightUrl}
-                className="hidden dark:block max-w-full"
-                alt="My Logo"
-                width={config.logoWidth}
-              />
-            )}
+            {config.logoWidth && config.logoHeight && (
+              <>
+                {config.logoLightUrl && (
+                  <Image
+                    src={config.logoLightUrl}
+                    className="hidden dark:block max-w-full"
+                    alt="My Logo"
+                    width={config.logoWidth}
+                    height={config.logoHeight}
+                  />
+                )}
 
-            {config.logoDarkUrl && (
-              <img
-                src={config.logoDarkUrl}
-                className="dark:hidden block max-w-full"
-                alt="My Logo"
-                width={config.logoWidth}
-              />
+                {config.logoDarkUrl && (
+                  <Image
+                    src={config.logoDarkUrl}
+                    className="dark:hidden block max-w-full"
+                    alt="My Logo"
+                    width={config.logoWidth}
+                    height={config.logoHeight}
+                  />
+                )}
+              </>
             )}
           </div>
 

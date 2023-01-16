@@ -9,6 +9,7 @@ export default {
   logoLightUrl: "/logo-dark.png",
   logoDarkUrl: "/logo-light.png",
   logoWidth: 250,
+  logoHeight: 45,
   links: [
     {
       href: "https://tiktok.com/@sunday.code",

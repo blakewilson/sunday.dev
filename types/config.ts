@@ -11,6 +11,7 @@ export type Config = {
   logoLightUrl?: string;
   logoDarkUrl?: string;
   logoWidth?: number;
+  logoHeight?: number;
   links: Link[];
   showLinkFavicons?: boolean;
 };

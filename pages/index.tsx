@@ -16,7 +16,7 @@ export default function Home() {
       <div className="absolute inset-0 flex flex-col items-center justify-center">
         <div className="max-w-xl px-6">
           <div className="flex flex-col items-center justify-center mb-8">
-            <img
+            <Image
               width={80}
               height={80}
               className="block h-20 w-20 rounded-full mb-4"

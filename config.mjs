@@ -1,17 +1,13 @@
-import avatar from "./public/avatar.jpeg";
-import logoLightMode from "./public/logo-dark.png";
-import logoDarkMode from "./public/logo-light.png";
-
 /**
  * @type {import('./types/config').Config}
  **/
 export default {
-  avatarUrl: avatar,
+  avatarUrl: "/avatar.jpg",
   siteName: "Sunday Code",
   siteTitle: "Sunday Code Links",
   siteDescription: "",
-  logoLightUrl: logoLightMode,
-  logoDarkUrl: logoDarkMode,
+  logoLightUrl: "/logo-dark.png",
+  logoDarkUrl: "/logo-light.png",
   logoWidth: 250,
   links: [
     {

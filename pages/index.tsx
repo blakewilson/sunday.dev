@@ -16,7 +16,7 @@ export default function Home() {
       <div className="absolute inset-0 flex flex-col items-center justify-center">
         <div className="max-w-xl px-6">
           <div className="flex flex-col items-center justify-center mb-8">
-            <Image
+            <img
               width={80}
               height={80}
               className="block h-20 w-20 rounded-full mb-4"
@@ -30,7 +30,7 @@ export default function Home() {
               )}
 
             {config.logoLightUrl && (
-              <Image
+              <img
                 src={config.logoLightUrl}
                 className="hidden dark:block max-w-full"
                 alt="My Logo"
@@ -39,7 +39,7 @@ export default function Home() {
             )}
 
             {config.logoDarkUrl && (
-              <Image
+              <img
                 src={config.logoDarkUrl}
                 className="dark:hidden block max-w-full"
                 alt="My Logo"

@@ -1,14 +1,18 @@
+import avatar from "./public/avatar.jpeg";
+import logoLightMode from "./public/logo-dark.png";
+import logoDarkMode from "./public/logo-light.png";
+
 /**
  * @type {import('./types/config').Config}
  **/
 export default {
-  avatarUrl: "/avatar.jpeg",
+  avatarUrl: avatar,
   siteName: "Sunday Code",
   siteTitle: "Sunday Code Links",
   siteDescription: "",
-  logoLightUrl: "/logo-dark.png",
-  logoDarkUrl: "/logo-light.png",
-  logoWidth: "250px",
+  logoLightUrl: logoLightMode,
+  logoDarkUrl: logoDarkMode,
+  logoWidth: 250,
   links: [
     {
       href: "https://tiktok.com/@sunday.code",

@@ -1,6 +1,7 @@
 import Head from "next/head";
 import Link from "../components/Link";
-import config from "../config";
+import config from "../config.mjs";
+import Image from "next/image";
 
 export default function Home() {
   return (
@@ -15,7 +16,9 @@ export default function Home() {
       <div className="absolute inset-0 flex flex-col items-center justify-center">
         <div className="max-w-xl px-6">
           <div className="flex flex-col items-center justify-center mb-8">
-            <img
+            <Image
+              width={80}
+              height={80}
               className="block h-20 w-20 rounded-full mb-4"
               src={config.avatarUrl}
               alt="My Avatar"
@@ -27,20 +30,20 @@ export default function Home() {
               )}
 
             {config.logoLightUrl && (
-              <img
+              <Image
                 src={config.logoLightUrl}
                 className="hidden dark:block max-w-full"
                 alt="My Logo"
-                style={{ width: config.logoWidth }}
+                width={config.logoWidth}
               />
             )}
 
             {config.logoDarkUrl && (
-              <img
+              <Image
                 src={config.logoDarkUrl}
                 className="dark:hidden block max-w-full"
                 alt="My Logo"
-                style={{ width: config.logoWidth }}
+                width={config.logoWidth}
               />
             )}
           </div>

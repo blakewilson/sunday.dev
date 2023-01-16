@@ -10,7 +10,7 @@ export type Config = {
   siteDescription?: string;
   logoLightUrl?: string;
   logoDarkUrl?: string;
-  logoWidth?: string;
+  logoWidth?: number;
   links: Link[];
   showLinkFavicons?: boolean;
 };
